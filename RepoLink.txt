@@ -1,2 +1,7 @@
 REPO LINK: 
-https://github.com/NE0SPACE/RogersScott_Project03.git
+	https://github.com/NE0SPACE/RogersScott_Project03.git
+
+DIFFICULTIES
+- Ran out of time to implement external document reading,
+  custom portait support, adjustable text speed on a character-by-character
+  basid, and/or ways to animate individual sections of the text itself.
