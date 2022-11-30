@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DialougeManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
     public TMP_Text nameTxt;
     public TMP_Text dialougeTxt;
@@ -21,7 +21,7 @@ public class DialougeManager : MonoBehaviour
 
     //Reads the imputted pages of dialouge and updates the queue with what it read.
     //Also sets the Text Speed for each page of the dialouge.
-    public void ReadDialouge(Dialouge dialouge)
+    public void ReadDialouge(Dialogue dialouge)
     {
         boxAnimation.SetBool("IsOpen", true);
         nameTxt.text = dialouge.name;
@@ -34,7 +34,7 @@ public class DialougeManager : MonoBehaviour
         }
 
         _txtSpeed.Clear();
-        foreach (float txtSpeed in dialouge.txtSpeedForEachSentance)
+        foreach (float txtSpeed in dialouge.txtSpeedForEachPage)
         {
             _txtSpeed.Enqueue(txtSpeed);
         }
